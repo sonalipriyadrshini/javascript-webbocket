@@ -29,3 +29,52 @@ const updatedArray=[]
     }
 })
 console.log(updatedArray)
+
+//const mybooks=books.filter((bg)=>bg.edition===1989)
+//console.log(mybooks);
+//const filterbook =books.filter((fb)=>{return fb.edition===1989 && fb.publisher>=1987})
+//console.log(filterbook);
+
+//map method
+const mapArray=[2,6,8,9,4,5]
+const newArray= mapArray.map((num)=>{
+    return num+1;
+})
+console.log(mapArray)
+console.log(newArray)
+
+//chaining
+const sArray=[2,4,6,7,4,6]
+const chainingArray =mapArray.map((data)=>data+2)
+                            .map((data)=>data*10)
+                            .filter((data)=>data>40)
+    console.log(chainingArray);
+    //reduce method
+    const arrayNum=[2,3,4,5,6]
+    const reduceMethod=arrayNum.reduce(function(accumulator,currentvalue){
+        console.log('accumulator ${accumulator} and ${currentvalue}')
+        return accumulator+currentvalue
+    },0)
+    console.log(reduceMethod);
+    //reduce method using arrow function
+    const redMethod= arrayNum.reduce((acc,cval)=>acc+cval,3)
+    console.log(redMethod)
+    //set method
+    //Q. how to create a set
+    const myset= new set();
+    console.log(myset)
+    //add some value in the set
+    myset.add(2);
+    myset.add(7);
+    myset.add(5)
+    console.log(myset);
+
+    //check the size of the set
+    const sizeset=myset.size;
+    console.log(sizeset);
+
+    //check if the value is exist or not
+    console.log(myset.has(10));
+
+    //remove a values from the set
+    const deletedItem=(myset.delete(2))
