@@ -78,3 +78,8 @@ const chainingArray =mapArray.map((data)=>data+2)
 
     //remove a values from the set
     const deletedItem=(myset.delete(2))
+    console.log(deletedItem);
+    console.log(myset);
+    //iterate over the values from the set 
+    for(let values of myset)
+    console.log(values)
